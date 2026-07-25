@@ -1,4 +1,22 @@
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+def normalize_database_url(url: str) -> str:
+    """Garante o driver psycopg v3, mesmo se a URI vier como postgresql:// do Supabase/Render."""
+    value = url.strip()
+    if not value:
+        return value
+
+    replacements = (
+        ("postgresql+psycopg2://", "postgresql+psycopg://"),
+        ("postgres://", "postgresql+psycopg://"),
+        ("postgresql://", "postgresql+psycopg://"),
+    )
+    for old, new in replacements:
+        if value.startswith(old):
+            return new + value[len(old) :]
+    return value
 
 
 class Settings(BaseSettings):
@@ -18,6 +36,13 @@ class Settings(BaseSettings):
     db_pool_size: int = 5
     db_max_overflow: int = 10
     db_echo: bool = False
+
+    @field_validator("database_url", mode="before")
+    @classmethod
+    def validate_database_url(cls, value: object) -> object:
+        if isinstance(value, str):
+            return normalize_database_url(value)
+        return value
 
     @property
     def cors_origins_list(self) -> list[str]:

@@ -5,17 +5,18 @@ from sqlalchemy import Engine, create_engine
 from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy.pool import NullPool
 
-from app.core.config import settings
+from app.core.config import normalize_database_url, settings
 
 
-def _engine_options() -> dict[str, Any]:
+def _engine_options(url: str) -> dict[str, Any]:
     options: dict[str, Any] = {
         "echo": settings.db_echo,
         "pool_pre_ping": True,
         "future": True,
     }
 
-    if settings.uses_transaction_pooler:
+    uses_pooler = "pooler." in url and ":6543" in url
+    if uses_pooler:
         # PgBouncer em modo transaction não suporta prepared statements nem pool no cliente.
         options["poolclass"] = NullPool
         options["connect_args"] = {"prepare_threshold": None}
@@ -27,10 +28,10 @@ def _engine_options() -> dict[str, Any]:
 
 
 def create_database_engine(url: str | None = None) -> Engine:
-    target = url or settings.database_url
+    target = normalize_database_url(url or settings.database_url)
     if not target:
         raise RuntimeError("DATABASE_URL não configurada. Defina no arquivo .env.")
-    return create_engine(target, **_engine_options())
+    return create_engine(target, **_engine_options(target))
 
 
 engine: Engine | None = None
