@@ -56,7 +56,7 @@ Endpoints:
 No primeiro start (tabela `users` vazia), o sistema cria o admin com:
 
 ```env
-ADMIN_EMAIL=admin@rotahub.local
+ADMIN_EMAIL=admin@rotahub.app
 ADMIN_PASSWORD=Admin@123
 ```
 

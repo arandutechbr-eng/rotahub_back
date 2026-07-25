@@ -21,13 +21,15 @@ class AuthService(BaseService[User, UserRepository]):
     not_found_message = "Usuário não encontrado."
 
     def ensure_admin_seed(self) -> User | None:
-        if self.repository.count_all() > 0:
+        email = settings.admin_email.lower().strip()
+        existing = self.repository.get_by_email(email)
+        if existing is not None:
             return None
 
         return self.repository.create(
             {
                 "name": settings.admin_name,
-                "email": settings.admin_email.lower(),
+                "email": email,
                 "password_hash": hash_password(settings.admin_password),
                 "role": UserRole.ADMIN,
                 "is_active": True,

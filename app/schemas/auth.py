@@ -1,14 +1,22 @@
 from datetime import datetime
 from uuid import UUID
 
-from pydantic import BaseModel, ConfigDict, EmailStr, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 from app.models.user import UserRole
 
 
 class LoginRequest(BaseModel):
-    email: EmailStr
+    email: str = Field(min_length=3, max_length=255)
     password: str = Field(min_length=6, max_length=128)
+
+    @field_validator("email")
+    @classmethod
+    def normalize_email(cls, value: str) -> str:
+        email = value.strip().lower()
+        if "@" not in email or "." not in email.split("@")[-1]:
+            raise ValueError("Informe um e-mail válido.")
+        return email
 
 
 class RefreshRequest(BaseModel):
@@ -26,7 +34,7 @@ class UserResponse(BaseModel):
 
     id: UUID
     name: str
-    email: EmailStr
+    email: str
     role: UserRole
     is_active: bool
     created_at: datetime

@@ -45,7 +45,7 @@ class Settings(BaseSettings):
     refresh_token_expire_days: int = 7
 
     admin_name: str = "Administrador"
-    admin_email: str = "admin@rotahub.local"
+    admin_email: str = "admin@rotahub.app"
     admin_password: str = "Admin@123"
 
     @field_validator("database_url", mode="before")
