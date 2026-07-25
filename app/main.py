@@ -1,3 +1,4 @@
+import logging
 from contextlib import asynccontextmanager
 from collections.abc import AsyncIterator
 
@@ -12,16 +13,26 @@ from app.core.exceptions import RotaHubError
 from app.repositories.user import UserRepository
 from app.services.auth import AuthService
 
+logger = logging.getLogger(__name__)
+
 
 def seed_admin_user() -> None:
+    """Cria o admin inicial. Falhas não devem impedir o start da API."""
     if SessionLocal is None:
         return
 
-    with SessionLocal() as session:
-        service = AuthService(UserRepository(session))
-        created = service.ensure_admin_seed()
-        if created is not None:
-            session.commit()
+    try:
+        with SessionLocal() as session:
+            service = AuthService(UserRepository(session))
+            created = service.ensure_admin_seed()
+            if created is not None:
+                session.commit()
+                logger.info("Admin inicial criado: %s", created.email)
+    except Exception:
+        logger.warning(
+            "Seed do admin não executado. Rode 'alembic upgrade head' para criar as tabelas.",
+            exc_info=True,
+        )
 
 
 @asynccontextmanager
