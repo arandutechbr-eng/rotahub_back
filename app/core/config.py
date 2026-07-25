@@ -48,6 +48,10 @@ class Settings(BaseSettings):
     admin_email: str = "admin@rotahub.app"
     admin_password: str = "Admin@123"
 
+    osrm_base_url: str = "https://router.project-osrm.org"
+    nominatim_base_url: str = "https://nominatim.openstreetmap.org"
+    routing_user_agent: str = "RotaHub/0.1 (contato@rotahub.app)"
+
     @field_validator("database_url", mode="before")
     @classmethod
     def validate_database_url(cls, value: object) -> object:
