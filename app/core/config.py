@@ -46,7 +46,13 @@ class Settings(BaseSettings):
 
     @property
     def cors_origins_list(self) -> list[str]:
-        return [origin.strip() for origin in self.cors_origins.split(",") if origin.strip()]
+        origins: list[str] = []
+        for raw in self.cors_origins.split(","):
+            origin = raw.strip().strip("\"'")
+            if not origin:
+                continue
+            origins.append(origin.rstrip("/"))
+        return origins
 
     @property
     def has_database(self) -> bool:
