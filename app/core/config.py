@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -37,6 +39,15 @@ class Settings(BaseSettings):
     db_max_overflow: int = 10
     db_echo: bool = False
 
+    jwt_secret_key: str = "change-me-in-production-rotahub-secret"
+    jwt_algorithm: str = "HS256"
+    access_token_expire_minutes: int = 30
+    refresh_token_expire_days: int = 7
+
+    admin_name: str = "Administrador"
+    admin_email: str = "admin@rotahub.local"
+    admin_password: str = "Admin@123"
+
     @field_validator("database_url", mode="before")
     @classmethod
     def validate_database_url(cls, value: object) -> object:
@@ -62,6 +73,14 @@ class Settings(BaseSettings):
     def uses_transaction_pooler(self) -> bool:
         """Supabase expõe o pooler (PgBouncer em modo transaction) na porta 6543."""
         return "pooler." in self.database_url and ":6543" in self.database_url
+
+    @property
+    def access_token_expires(self) -> timedelta:
+        return timedelta(minutes=self.access_token_expire_minutes)
+
+    @property
+    def refresh_token_expires(self) -> timedelta:
+        return timedelta(days=self.refresh_token_expire_days)
 
 
 settings = Settings()

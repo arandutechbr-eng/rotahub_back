@@ -28,7 +28,7 @@ class BaseService(Generic[ModelType, RepositoryType]):
         pagination: PaginationParams,
         *,
         filters: dict[str, Any] | None = None,
-    ) -> Page[ModelType]:
+    ) -> Page[Any]:
         items = self.repository.list(
             skip=pagination.skip,
             limit=pagination.page_size,

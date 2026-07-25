@@ -1,10 +1,33 @@
+from contextlib import asynccontextmanager
+from collections.abc import AsyncIterator
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.api.router import api_router
+from app.api.router import register_api_routes
 from app.core.config import settings
+from app.core.database import SessionLocal
 from app.core.exceptions import RotaHubError
+from app.repositories.user import UserRepository
+from app.services.auth import AuthService
+
+
+def seed_admin_user() -> None:
+    if SessionLocal is None:
+        return
+
+    with SessionLocal() as session:
+        service = AuthService(UserRepository(session))
+        created = service.ensure_admin_seed()
+        if created is not None:
+            session.commit()
+
+
+@asynccontextmanager
+async def lifespan(_: FastAPI) -> AsyncIterator[None]:
+    seed_admin_user()
+    yield
 
 
 def register_exception_handlers(application: FastAPI) -> None:
@@ -17,9 +40,10 @@ def create_app() -> FastAPI:
     application = FastAPI(
         title=settings.app_name,
         description="Gestão Inteligente de Rotas e Logística.",
-        version="0.2.0",
+        version="0.3.0",
         docs_url="/docs",
         redoc_url="/redoc",
+        lifespan=lifespan,
     )
 
     application.add_middleware(
@@ -31,7 +55,7 @@ def create_app() -> FastAPI:
     )
 
     register_exception_handlers(application)
-    application.include_router(api_router, prefix=settings.api_prefix)
+    register_api_routes(application, settings.api_prefix)
 
     @application.get("/")
     def root() -> dict[str, str]:
