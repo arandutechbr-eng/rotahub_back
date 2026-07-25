@@ -75,4 +75,10 @@ def hash_token(token: str) -> str:
 def verify_token_hash(token: str, token_hash: str | None) -> bool:
     if not token_hash:
         return False
+    # Compatível com hashes bcrypt antigos (antes da troca para SHA-256).
+    if token_hash.startswith("$2"):
+        try:
+            return bcrypt.checkpw(token.encode("utf-8"), token_hash.encode("utf-8"))
+        except ValueError:
+            return False
     return hmac.compare_digest(hash_token(token), token_hash)
