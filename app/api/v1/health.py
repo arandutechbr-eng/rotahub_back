@@ -15,6 +15,7 @@ class HealthResponse(BaseModel):
     app: str
     env: str
     database: Literal["ok", "error", "not_configured"]
+    cors_origins: list[str]
 
 
 def _check_database() -> Literal["ok", "error", "not_configured"]:
@@ -37,4 +38,5 @@ def health_check() -> HealthResponse:
         app=settings.app_name,
         env=settings.app_env,
         database=database,
+        cors_origins=settings.cors_origins_list,
     )
