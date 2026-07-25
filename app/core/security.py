@@ -1,3 +1,5 @@
+import hashlib
+import hmac
 from datetime import UTC, datetime, timedelta
 from typing import Any
 from uuid import UUID
@@ -67,10 +69,10 @@ def decode_token(token: str, *, expected_type: str) -> dict[str, Any]:
 
 
 def hash_token(token: str) -> str:
-    return bcrypt.hashpw(token.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
+    return hashlib.sha256(token.encode("utf-8")).hexdigest()
 
 
 def verify_token_hash(token: str, token_hash: str | None) -> bool:
     if not token_hash:
         return False
-    return bcrypt.checkpw(token.encode("utf-8"), token_hash.encode("utf-8"))
+    return hmac.compare_digest(hash_token(token), token_hash)
