@@ -1,11 +1,12 @@
 from fastapi import APIRouter
 
-from app.api.v1 import auth, freight, health
+from app.api.v1 import auth, freight, health, toll_plazas
 
 api_router = APIRouter()
 api_router.include_router(health.router)
 api_router.include_router(auth.router)
 api_router.include_router(freight.router)
+api_router.include_router(toll_plazas.router)
 
 
 def register_api_routes(application, prefix: str) -> None:
@@ -13,3 +14,4 @@ def register_api_routes(application, prefix: str) -> None:
     application.include_router(health.router, prefix=prefix)
     application.include_router(auth.router, prefix=prefix)
     application.include_router(freight.router, prefix=prefix)
+    application.include_router(toll_plazas.router, prefix=prefix)

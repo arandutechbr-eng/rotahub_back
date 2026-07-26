@@ -10,8 +10,10 @@ from app.api.router import register_api_routes
 from app.core.config import settings
 from app.core.database import SessionLocal
 from app.core.exceptions import RotaHubError
+from app.repositories.toll_plaza import TollPlazaRepository
 from app.repositories.user import UserRepository
 from app.services.auth import AuthService
+from app.services.toll_plaza import TollPlazaService
 
 logger = logging.getLogger(__name__)
 
@@ -35,9 +37,29 @@ def seed_admin_user() -> None:
         )
 
 
+def seed_toll_plazas() -> None:
+    """Popula praças iniciais a partir do JSON se a tabela estiver vazia."""
+    if SessionLocal is None:
+        return
+
+    try:
+        with SessionLocal() as session:
+            service = TollPlazaService(TollPlazaRepository(session))
+            created = service.ensure_seed_from_json()
+            if created:
+                session.commit()
+                logger.info("Seed de pedágios: %s praças inseridas.", created)
+    except Exception:
+        logger.warning(
+            "Seed de pedágios não executado. Rode 'alembic upgrade head' para criar as tabelas.",
+            exc_info=True,
+        )
+
+
 @asynccontextmanager
 async def lifespan(_: FastAPI) -> AsyncIterator[None]:
     seed_admin_user()
+    seed_toll_plazas()
     yield
 
 

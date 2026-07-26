@@ -1,0 +1,56 @@
+[
+  {
+    "id": "sp330-perus",
+    "name": "Praça de Pedágio Perus",
+    "road": "SP-330 (Rodovia Anhanguera)",
+    "concessionaire": "AutoBAn",
+    "latitude": -23.3861,
+    "longitude": -46.8642,
+    "tariff_per_axle": 4.6
+  },
+  {
+    "id": "sp330-jundiai",
+    "name": "Praça de Pedágio Jundiaí",
+    "road": "SP-330 (Rodovia Anhanguera)",
+    "concessionaire": "AutoBAn",
+    "latitude": -23.1857,
+    "longitude": -46.9458,
+    "tariff_per_axle": 4.6
+  },
+  {
+    "id": "sp330-nova-odessa",
+    "name": "Praça de Pedágio Nova Odessa",
+    "road": "SP-330 (Rodovia Anhanguera)",
+    "concessionaire": "AutoBAn",
+    "latitude": -22.7803,
+    "longitude": -47.2956,
+    "tariff_per_axle": 4.6
+  },
+  {
+    "id": "sp348-caieiras",
+    "name": "Praça de Pedágio Caieiras",
+    "road": "SP-348 (Rodovia dos Bandeirantes)",
+    "concessionaire": "AutoBAn",
+    "latitude": -23.365,
+    "longitude": -46.7409,
+    "tariff_per_axle": 5.1
+  },
+  {
+    "id": "sp348-jundiai",
+    "name": "Praça de Pedágio Bandeirantes Jundiaí",
+    "road": "SP-348 (Rodovia dos Bandeirantes)",
+    "concessionaire": "AutoBAn",
+    "latitude": -23.1394,
+    "longitude": -46.9986,
+    "tariff_per_axle": 5.1
+  },
+  {
+    "id": "sp070-jacarei",
+    "name": "Praça de Pedágio Jacareí",
+    "road": "SP-070 (Rodovia Ayrton Senna/Carvalho Pinto)",
+    "concessionaire": "Ecopistas",
+    "latitude": -23.2984,
+    "longitude": -45.9663,
+    "tariff_per_axle": 3.9
+  }
+]

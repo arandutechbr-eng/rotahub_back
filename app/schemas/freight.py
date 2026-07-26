@@ -33,12 +33,23 @@ class GeoPoint(BaseModel):
     longitude: float
 
 
+class TollPlazaHit(BaseModel):
+    id: str
+    name: str
+    road: str
+    concessionaire: str
+    latitude: float
+    longitude: float
+    cost: float
+
+
 class FreightSimulateResponse(BaseModel):
     origin: GeoPoint
     destination: GeoPoint
     distance_km: float
     duration_minutes: float
     estimated_fuel_cost: float
+    estimated_toll_cost: float = 0.0
     estimated_freight_value: float
     currency: str = "BRL"
     route_preference: RoutePreference
@@ -46,4 +57,5 @@ class FreightSimulateResponse(BaseModel):
     axles: int
     round_trip: bool
     geometry: list[list[float]]
+    tolls: list[TollPlazaHit] = Field(default_factory=list)
     notes: list[str] = Field(default_factory=list)

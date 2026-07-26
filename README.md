@@ -62,6 +62,19 @@ ADMIN_PASSWORD=Admin@123
 
 Troque a senha em produção.
 
+## Praças de pedágio
+
+Endpoints (admin para escrita):
+
+- `GET /api/v1/toll-plazas` — listar (autenticado)
+- `GET /api/v1/toll-plazas/{id}` — detalhe
+- `POST /api/v1/toll-plazas` — criar (admin)
+- `PATCH /api/v1/toll-plazas/{id}` — atualizar (admin)
+- `DELETE /api/v1/toll-plazas/{id}` — remover (admin)
+
+No primeiro start (tabela vazia), o sistema importa as praças de
+`app/data/toll_plazas.json`. Depois o admin gerencia pela tela **Praças de Pedágio**.
+
 ## Migrations
 
 ```bash
