@@ -1,56 +1,1127 @@
 [
   {
-    "id": "sp330-perus",
-    "name": "Praça de Pedágio Perus",
-    "road": "SP-330 (Rodovia Anhanguera)",
-    "concessionaire": "AutoBAn",
-    "latitude": -23.3861,
-    "longitude": -46.8642,
-    "tariff_per_axle": 4.6
+    "id": "sp-330-perus-026-495",
+    "name": "Praça PERUS",
+    "road": "Via Anhanguera (SP-330)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.4084915,
+    "longitude": -46.7436432,
+    "tariff_per_axle": 13.7
   },
   {
-    "id": "sp330-jundiai",
-    "name": "Praça de Pedágio Jundiaí",
-    "road": "SP-330 (Rodovia Anhanguera)",
-    "concessionaire": "AutoBAn",
-    "latitude": -23.1857,
-    "longitude": -46.9458,
-    "tariff_per_axle": 4.6
+    "id": "sp-330-valinhos-082-000",
+    "name": "Praça VALINHOS",
+    "road": "Via Anhanguera (SP-330)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.97056,
+    "longitude": -46.99583,
+    "tariff_per_axle": 13.6
   },
   {
-    "id": "sp330-nova-odessa",
-    "name": "Praça de Pedágio Nova Odessa",
-    "road": "SP-330 (Rodovia Anhanguera)",
-    "concessionaire": "AutoBAn",
-    "latitude": -22.7803,
-    "longitude": -47.2956,
-    "tariff_per_axle": 4.6
+    "id": "sp-330-valinhos-081-000",
+    "name": "Praça VALINHOS",
+    "road": "Via Anhanguera (SP-330)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.97056,
+    "longitude": -46.99583,
+    "tariff_per_axle": 13.6
   },
   {
-    "id": "sp348-caieiras",
-    "name": "Praça de Pedágio Caieiras",
-    "road": "SP-348 (Rodovia dos Bandeirantes)",
-    "concessionaire": "AutoBAn",
-    "latitude": -23.365,
-    "longitude": -46.7409,
-    "tariff_per_axle": 5.1
+    "id": "sp-330-nova-odessa-118-000",
+    "name": "Praça NOVA ODESSA",
+    "road": "Via Anhanguera (SP-330)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.7805746,
+    "longitude": -47.2993805,
+    "tariff_per_axle": 12.1
   },
   {
-    "id": "sp348-jundiai",
-    "name": "Praça de Pedágio Bandeirantes Jundiaí",
-    "road": "SP-348 (Rodovia dos Bandeirantes)",
-    "concessionaire": "AutoBAn",
-    "latitude": -23.1394,
-    "longitude": -46.9986,
-    "tariff_per_axle": 5.1
+    "id": "sp-330-limeira-152-000",
+    "name": "Praça LIMEIRA",
+    "road": "Via Anhanguera (SP-330)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.5615068,
+    "longitude": -47.401766,
+    "tariff_per_axle": 9.2
   },
   {
-    "id": "sp070-jacarei",
-    "name": "Praça de Pedágio Jacareí",
-    "road": "SP-070 (Rodovia Ayrton Senna/Carvalho Pinto)",
-    "concessionaire": "Ecopistas",
-    "latitude": -23.2984,
-    "longitude": -45.9663,
+    "id": "sp-348-caieiras-036-200",
+    "name": "Praça CAIEIRAS",
+    "road": "Rodovia dos Bandeirantes (SP-348)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.3644621,
+    "longitude": -46.7484765,
+    "tariff_per_axle": 13.7
+  },
+  {
+    "id": "sp-348-campo-limpo-039-047",
+    "name": "Praça CAMPO LIMPO",
+    "road": "Rodovia dos Bandeirantes (SP-348)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.207791,
+    "longitude": -46.788919,
+    "tariff_per_axle": 13.7
+  },
+  {
+    "id": "sp-348-itupeva-077-430",
+    "name": "Praça ITUPEVA",
+    "road": "Rodovia dos Bandeirantes (SP-348)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1531055,
+    "longitude": -47.0580347,
+    "tariff_per_axle": 13.6
+  },
+  {
+    "id": "sp-348-sumare-115-520",
+    "name": "Praça SUMARÉ",
+    "road": "Rodovia dos Bandeirantes (SP-348)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.8217964,
+    "longitude": -47.267105,
+    "tariff_per_axle": 12.1
+  },
+  {
+    "id": "sp-348-limeira-159-550",
+    "name": "Praça LIMEIRA",
+    "road": "Rodovia dos Bandeirantes (SP-348)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.5615068,
+    "longitude": -47.401766,
+    "tariff_per_axle": 9.2
+  },
+  {
+    "id": "sp-147-limeira-091-300",
+    "name": "Praça LIMEIRA",
+    "road": "Rodovia Engº João Tosello (SP-147)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.5615068,
+    "longitude": -47.401766,
+    "tariff_per_axle": 12.6
+  },
+  {
+    "id": "sp-147-iracemapolis-127-200",
+    "name": "Praça IRACEMÁPOLIS",
+    "road": "Rodovia Dep.Laércio Corte (SP-147)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.5869091,
+    "longitude": -47.5160966,
+    "tariff_per_axle": 8.6
+  },
+  {
+    "id": "sp-191-araras-027-500",
+    "name": "Praça ARARAS",
+    "road": "Rodovia Wilson Finardi (SP-191)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.3569192,
+    "longitude": -47.3838766,
+    "tariff_per_axle": 9.8
+  },
+  {
+    "id": "sp-191-rio-claro-059-000",
+    "name": "Praça RIO CLARO",
+    "road": "Rodovia Wilson Finardi (SP-191)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.4100108,
+    "longitude": -47.5603933,
+    "tariff_per_axle": 5.0
+  },
+  {
+    "id": "sp-330-leme-181-760",
+    "name": "Praça LEME",
+    "road": "Via Anhanguera (SP-330)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.1844807,
+    "longitude": -47.385295,
+    "tariff_per_axle": 11.2
+  },
+  {
+    "id": "sp-330-pirassununga-215-000",
+    "name": "Praça PIRASSUNUNGA",
+    "road": "Via Anhanguera (SP-330)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.9980468,
+    "longitude": -47.4280861,
+    "tariff_per_axle": 11.2
+  },
+  {
+    "id": "sp-340-jaguariuna-123-500",
+    "name": "Praça JAGUARIÚNA",
+    "road": "Rodovia Gov. Dr. Adhemar Pereira de Barros (SP-340)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.70374,
+    "longitude": -46.985062,
+    "tariff_per_axle": 17.6
+  },
+  {
+    "id": "sp-340-estiva-gerbi-192-840",
+    "name": "Praça ESTIVA GERBI",
+    "road": "Rodovia Dep.Mário Beni (SP-340)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.2742719,
+    "longitude": -46.9523302,
+    "tariff_per_axle": 10.5
+  },
+  {
+    "id": "sp-340-casa-branca-221-292",
+    "name": "Praça CASA BRANCA",
+    "road": "Rodovia Prof. Boanerges Nogueira de Lima (SP-340)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.7743137,
+    "longitude": -47.0852175,
+    "tariff_per_axle": 9.4
+  },
+  {
+    "id": "sp-340-mococa-254-690",
+    "name": "Praça MOCOCA",
+    "road": "Rodovia Prof. José André de Lima (SP-340)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.464731,
+    "longitude": -47.002405,
+    "tariff_per_axle": 8.9
+  },
+  {
+    "id": "sp-342-esp-santo-do-pinhal-191-890",
+    "name": "Praça ESP. SANTO DO PINHAL",
+    "road": "Rodovia Gov. Dr. Adhemar Pereira de Barros (SP-342)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.1929522,
+    "longitude": -46.7470021,
+    "tariff_per_axle": 13.1
+  },
+  {
+    "id": "sp-342-aguas-da-prata-240-000",
+    "name": "Praça ÁGUAS DA PRATA",
+    "road": "Rodovia Gov. Dr. Adhemar Pereira de Barros (SP-342)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.9464285,
+    "longitude": -46.7192121,
+    "tariff_per_axle": 6.3
+  },
+  {
+    "id": "sp-350-itobi-252-140",
+    "name": "Praça ITOBI",
+    "road": "Rodovia Dep.Eduardo Vicente Nasser (SP-350)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.730853,
+    "longitude": -46.9743,
+    "tariff_per_axle": 13.4
+  },
+  {
+    "id": "sp-340-portico-jaguariuna-123-500",
+    "name": "Praça Pórtico Jaguariúna",
+    "road": "Rodovia Prof. José André de Lima (SP-340)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.70374,
+    "longitude": -46.985062,
+    "tariff_per_axle": 8.8
+  },
+  {
+    "id": "sp-340-portico-santo-antonio-de-posse-147-030",
+    "name": "Praça Pórtico Santo Antônio de Posse",
+    "road": "Rodovia Prof. José André de Lima (SP-340)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.6053304,
+    "longitude": -46.9197291,
+    "tariff_per_axle": 8.8
+  },
+  {
+    "id": "sp-075-indaiatuba-060-800",
+    "name": "Praça INDAIATUBA",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.0908356,
+    "longitude": -47.2180677,
+    "tariff_per_axle": 19.4
+  },
+  {
+    "id": "sp-075-indaiatuba-bloqueio-062-000",
+    "name": "Praça INDAIATUBA (BLOQUEIO)",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.0908356,
+    "longitude": -47.2180677,
+    "tariff_per_axle": 19.4
+  },
+  {
+    "id": "sp-127-rio-das-pedras-058-650",
+    "name": "Praça RIO DAS PEDRAS",
+    "road": "Rodovia Cornélio Pires (SP-127)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.8441256,
+    "longitude": -47.6065667,
+    "tariff_per_axle": 14.2
+  },
+  {
+    "id": "sp-300-itupeva-076-680",
+    "name": "Praça ITUPEVA",
+    "road": "Rodovia Dom Grabiel Paulino Bueno Couto (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1531055,
+    "longitude": -47.0580347,
+    "tariff_per_axle": 10.6
+  },
+  {
+    "id": "sp-300-porto-feliz-136-722",
+    "name": "Praça PORTO FELIZ",
+    "road": "Rodovia Marechal Rondon (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.2110713,
+    "longitude": -47.5247163,
+    "tariff_per_axle": 11.0
+  },
+  {
+    "id": "sp-075-portico-aeroporto-pap-66-700",
+    "name": "Praça Pórtico Aeroporto (PaP)",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1785421,
+    "longitude": -46.9411477,
+    "tariff_per_axle": 1.5
+  },
+  {
+    "id": "sp-075-portico-bloqueio-indaiatuba-pap-62-000",
+    "name": "Praça Pórtico Bloqueio Indaiatuba (PaP)",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.0908356,
+    "longitude": -47.2180677,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-075-portico-campinas-pap-70-650",
+    "name": "Praça Pórtico Campinas (PaP)",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.9056391,
+    "longitude": -47.059564,
+    "tariff_per_axle": 2.7
+  },
+  {
+    "id": "sp-075-portico-itu-1-pap-26-750",
+    "name": "Praça Pórtico Itu 1 (PaP)",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.6071891,
+    "longitude": -46.8967046,
+    "tariff_per_axle": 4.3
+  },
+  {
+    "id": "sp-075-portico-itu-2-pap-32-100",
+    "name": "Praça Pórtico Itu 2 (PaP)",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.2637798,
+    "longitude": -47.2998462,
+    "tariff_per_axle": 2.8
+  },
+  {
+    "id": "sp-075-portico-praca-indaiatuba-pap-60-800",
+    "name": "Praça Pórtico Praça Indaiatuba (PaP)",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.9041061,
+    "longitude": -47.059636,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-075-portico-salto-1-pap-33-150",
+    "name": "Praça Pórtico Salto 1 (PaP)",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1989983,
+    "longitude": -47.2913682,
+    "tariff_per_axle": 2.8
+  },
+  {
+    "id": "sp-075-portico-salto-2-pap-43-350",
+    "name": "Praça Pórtico Salto 2 (PaP)",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1989983,
+    "longitude": -47.2913682,
+    "tariff_per_axle": 4.3
+  },
+  {
+    "id": "sp-075-portico-salto-3-pap-44-400",
+    "name": "Praça Pórtico Salto 3 (PaP)",
+    "road": "Rodovia Engº. Ermênio de Oliveira Penteado (SP-075)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1989983,
+    "longitude": -47.2913682,
+    "tariff_per_axle": 4.3
+  },
+  {
+    "id": "sp-127-morro-do-alto-tatui-128-900",
+    "name": "Praça MORRO DO ALTO (TATUÍ)",
+    "road": "Rodovia Antônio Romano Schincariol (SP-127)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.3489848,
+    "longitude": -47.8490165,
+    "tariff_per_axle": 15.9
+  },
+  {
+    "id": "sp-127-morro-do-alto-itapetininga-133-900",
+    "name": "Praça MORRO DO ALTO (ITAPETININGA)",
+    "road": "Rodovia Antônio Romano Schincariol (SP-127)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.588607,
+    "longitude": -48.048326,
+    "tariff_per_axle": 15.9
+  },
+  {
+    "id": "sp-127-gramadao-196-725",
+    "name": "Praça GRAMADÃO",
+    "road": "Rodovia Prof. Francisco da Silva Pontes (SP-127)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.9849105,
+    "longitude": -48.8803886,
+    "tariff_per_axle": 14.3
+  },
+  {
+    "id": "sp-255-avare-240-300",
+    "name": "Praça AVARÉ",
+    "road": "Rodovia João Mellão (SP-255)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1045215,
+    "longitude": -48.9259103,
+    "tariff_per_axle": 10.8
+  },
+  {
+    "id": "sp-258-buri-250-145",
+    "name": "Praça BURI",
+    "road": "Rodovia Francisco Alves Negrão (SP-258)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.79849,
+    "longitude": -48.598924,
+    "tariff_per_axle": 15.4
+  },
+  {
+    "id": "sp-258-itarare-326-670",
+    "name": "Praça ITARARÉ",
+    "road": "Rodovia Francisco Alves Negrão (SP-258)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -24.1145368,
+    "longitude": -49.3352464,
+    "tariff_per_axle": 9.9
+  },
+  {
+    "id": "sp-270-alambari-135-300",
+    "name": "Praça ALAMBARI",
+    "road": "Rodovia Raposo Tavares (SP-270)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.550338,
+    "longitude": -47.897971,
+    "tariff_per_axle": 12.1
+  },
+  {
+    "id": "sp-055-santos-250-464",
+    "name": "Praça SANTOS",
+    "road": "Rodovia Cônego Domênico Rangoni (SP-055)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.9609448,
+    "longitude": -46.3166316,
+    "tariff_per_axle": 18.3
+  },
+  {
+    "id": "sp-055-sao-vicente-279-950",
+    "name": "Praça SÃO VICENTE",
+    "road": "Rodovia Padre Manoel da Nóbrega (SP-055)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.9664177,
+    "longitude": -46.3861401,
+    "tariff_per_axle": 10.9
+  },
+  {
+    "id": "sp-150-riacho-grande-031-106",
+    "name": "Praça RIACHO GRANDE",
+    "road": "Via Anchieta (SP-150)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.7080345,
+    "longitude": -46.5506747,
+    "tariff_per_axle": 38.7
+  },
+  {
+    "id": "sp-160-diadema-bloqueio-015-917",
+    "name": "Praça DIADEMA (BLOQUEIO)",
+    "road": "Rodovia dos Imigrantes (SP-160)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.6866428,
+    "longitude": -46.6246935,
+    "tariff_per_axle": 3.1
+  },
+  {
+    "id": "sp-160-eldorado-bloqueio-020-100",
+    "name": "Praça ELDORADO (BLOQUEIO)",
+    "road": "Rodovia dos Imigrantes (SP-160)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -24.522583,
+    "longitude": -48.1093489,
+    "tariff_per_axle": 5.7
+  },
+  {
+    "id": "sp-160-batistini-bloqueio-025-579",
+    "name": "Praça BATISTINI (BLOQUEIO)",
+    "road": "Rodovia dos Imigrantes (SP-160)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.7688621,
+    "longitude": -46.5884054,
+    "tariff_per_axle": 9.1
+  },
+  {
+    "id": "sp-160-piratininga-032-381",
+    "name": "Praça PIRATININGA",
+    "road": "Rodovia dos Imigrantes (SP-160)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.7080345,
+    "longitude": -46.5506747,
+    "tariff_per_axle": 38.7
+  },
+  {
+    "id": "sp-063-louveira-010-370",
+    "name": "Praça LOUVEIRA",
+    "road": "Rodovia Romildo Prado (SP-063)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.08639,
+    "longitude": -46.95056,
     "tariff_per_axle": 3.9
+  },
+  {
+    "id": "sp-065-igarata-026-500",
+    "name": "Praça IGARATÁ",
+    "road": "Rodovia Dom Pedro I (SP-065)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.2063475,
+    "longitude": -46.156934,
+    "tariff_per_axle": 13.3
+  },
+  {
+    "id": "sp-065-atibaia-079-900",
+    "name": "Praça ATIBAIA",
+    "road": "Rodovia Dom Pedro I (SP-065)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1177393,
+    "longitude": -46.5547861,
+    "tariff_per_axle": 10.6
+  },
+  {
+    "id": "sp-065-itatiba-110-100",
+    "name": "Praça ITATIBA",
+    "road": "Rodovia Dom Pedro I (SP-065)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.0055542,
+    "longitude": -46.8397726,
+    "tariff_per_axle": 15.3
+  },
+  {
+    "id": "sp-360-jundiai-077-100",
+    "name": "Praça JUNDIAÍ",
+    "road": "Rodovia Engenheiro Constâncio Cintra (SP-360)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1887668,
+    "longitude": -46.884506,
+    "tariff_per_axle": 6.1
+  },
+  {
+    "id": "sp-360-portico-km-74-pap-74-000",
+    "name": "Praça Pórtico km 74 (PaP)",
+    "road": "Rodovia Engenheiro Constâncio Cintra (SP-360)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.3443296,
+    "longitude": -46.0121518,
+    "tariff_per_axle": 3.8
+  },
+  {
+    "id": "sp-360-portico-jundiai-pap-77-100",
+    "name": "Praça Pórtico Jundiaí (PaP)",
+    "road": "Rodovia Engenheiro Constâncio Cintra (SP-360)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1887668,
+    "longitude": -46.884506,
+    "tariff_per_axle": 2.3
+  },
+  {
+    "id": "sp-225-piratininga-251-900",
+    "name": "Praça PIRATININGA",
+    "road": "Rodovia Eng. João Baptista Cabral Renno (SP-225)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.7080345,
+    "longitude": -46.5506747,
+    "tariff_per_axle": 10.2
+  },
+  {
+    "id": "sp-225-sta-cruz-do-rio-pardo-300-930",
+    "name": "Praça STA CRUZ DO RIO PARDO",
+    "road": "Rodovia Eng. João Baptista Cabral Renno (SP-225)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.9060715,
+    "longitude": -49.6277378,
+    "tariff_per_axle": 9.9
+  },
+  {
+    "id": "sp-270-palmital-413-490",
+    "name": "Praça PALMITAL",
+    "road": "Rodovia Raposo Tavares (SP-270)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.786384,
+    "longitude": -50.2198965,
+    "tariff_per_axle": 12.2
+  },
+  {
+    "id": "sp-270-assis-453-590",
+    "name": "Praça ASSIS",
+    "road": "Rodovia Raposo Tavares (SP-270)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.6620892,
+    "longitude": -50.420623,
+    "tariff_per_axle": 12.7
+  },
+  {
+    "id": "sp-270-rancharia-512-300",
+    "name": "Praça RANCHARIA",
+    "road": "Rodovia Raposo Tavares (SP-270)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.2294981,
+    "longitude": -50.8922333,
+    "tariff_per_axle": 10.4
+  },
+  {
+    "id": "sp-270-regente-feijo-541-540",
+    "name": "Praça REGENTE FEIJÓ",
+    "road": "Rodovia Raposo Tavares (SP-270)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.2191056,
+    "longitude": -51.3034558,
+    "tariff_per_axle": 10.4
+  },
+  {
+    "id": "sp-270-presidente-bernades-590-750",
+    "name": "Praça PRESIDENTE BERNADES",
+    "road": "Rodovia Raposo Tavares (SP-270)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.0064609,
+    "longitude": -51.5542973,
+    "tariff_per_axle": 13.7
+  },
+  {
+    "id": "sp-270-caiua-639-000",
+    "name": "Praça CAIUÁ",
+    "road": "Rodovia Raposo Tavares (SP-270)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.8319357,
+    "longitude": -51.9887179,
+    "tariff_per_axle": 10.3
+  },
+  {
+    "id": "sp-327-ourinhos-014-500",
+    "name": "Praça OURINHOS",
+    "road": "Rodovia Orlando Quagliato (SP-327)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.9777918,
+    "longitude": -49.868204,
+    "tariff_per_axle": 10.3
+  },
+  {
+    "id": "sp-300-avai-367-767",
+    "name": "Praça AVAÍ",
+    "road": "Rodovia Marechal Rondon (OESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.1564662,
+    "longitude": -49.3316395,
+    "tariff_per_axle": 8.5
+  },
+  {
+    "id": "sp-300-pirajui-400-833",
+    "name": "Praça PIRAJUÍ",
+    "road": "Rodovia Marechal Rondon (OESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.9957877,
+    "longitude": -49.4549675,
+    "tariff_per_axle": 8.0
+  },
+  {
+    "id": "sp-300-promissao-455-715",
+    "name": "Praça PROMISSÃO",
+    "road": "Rodovia Marechal Rondon (OESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.5404913,
+    "longitude": -49.8574709,
+    "tariff_per_axle": 9.6
+  },
+  {
+    "id": "sp-300-glicerio-497-912",
+    "name": "Praça GLICÉRIO",
+    "road": "Rodovia Marechal Rondon (OESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.3814805,
+    "longitude": -50.2100452,
+    "tariff_per_axle": 10.6
+  },
+  {
+    "id": "sp-300-rubiacea-562-008",
+    "name": "Praça RUBIÁCEA",
+    "road": "Rodovia Marechal Rondon (OESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.2996334,
+    "longitude": -50.7298698,
+    "tariff_per_axle": 9.1
+  },
+  {
+    "id": "sp-300-lavinia-590-482",
+    "name": "Praça LAVÍNIA",
+    "road": "Rodovia Marechal Rondon (OESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.1665477,
+    "longitude": -51.0410539,
+    "tariff_per_axle": 7.2
+  },
+  {
+    "id": "sp-300-guaracai-621-270",
+    "name": "Praça GUARAÇAÍ",
+    "road": "Rodovia Marechal Rondon (OESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -21.0322387,
+    "longitude": -51.2100464,
+    "tariff_per_axle": 7.0
+  },
+  {
+    "id": "sp-300-castilho-655-485",
+    "name": "Praça CASTILHO",
+    "road": "Rodovia Marechal Rondon (OESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -20.8695636,
+    "longitude": -51.4877792,
+    "tariff_per_axle": 5.2
+  },
+  {
+    "id": "sp-101-monte-mor-029-700",
+    "name": "Praça MONTE MOR",
+    "road": "Rodovia Jornalista Francisco Aguirre Proença (SP-101)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.945043,
+    "longitude": -47.312182,
+    "tariff_per_axle": 10.1
+  },
+  {
+    "id": "sp-101-rafard-055-800",
+    "name": "Praça RAFARD",
+    "road": "Rodovia Jornalista Francisco Aguirre Proença (SP-101)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.0143559,
+    "longitude": -47.5306721,
+    "tariff_per_axle": 7.2
+  },
+  {
+    "id": "sp-300-conchas-192-100",
+    "name": "Praça CONCHAS",
+    "road": "Rodovia Marechal Rondon (LESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.0133538,
+    "longitude": -48.0077595,
+    "tariff_per_axle": 9.7
+  },
+  {
+    "id": "sp-300-anhembi-228-200",
+    "name": "Praça ANHEMBI",
+    "road": "Rodovia Marechal Rondon (LESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.7891096,
+    "longitude": -48.1316776,
+    "tariff_per_axle": 11.0
+  },
+  {
+    "id": "sp-300-botucatu-259-300",
+    "name": "Praça BOTUCATU",
+    "road": "Rodovia Marechal Rondon (LESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.8879628,
+    "longitude": -48.4410712,
+    "tariff_per_axle": 7.7
+  },
+  {
+    "id": "sp-300-areiopolis-285-000",
+    "name": "Praça AREIÓPOLIS",
+    "road": "Rodovia Marechal Rondon (LESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.6758064,
+    "longitude": -48.6673653,
+    "tariff_per_axle": 8.6
+  },
+  {
+    "id": "sp-300-agudos-314-000",
+    "name": "Praça AGUDOS",
+    "road": "Rodovia Marechal Rondon (LESTE) (SP-300)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.4719836,
+    "longitude": -48.9884476,
+    "tariff_per_axle": 8.4
+  },
+  {
+    "id": "sp-308-salto-109-300",
+    "name": "Praça SALTO",
+    "road": "Rodovia do Açucar - Comendador Mário Dedini (SP-308)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1989983,
+    "longitude": -47.2913682,
+    "tariff_per_axle": 4.9
+  },
+  {
+    "id": "sp-308-rio-das-pedras-147-300",
+    "name": "Praça RIO DAS PEDRAS",
+    "road": "Rodovia do Açucar - Comendador Mário Dedini (SP-308)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -22.8441256,
+    "longitude": -47.6065667,
+    "tariff_per_axle": 11.0
+  },
+  {
+    "id": "sp-070-sao-jose-dos-campos-092-500",
+    "name": "Praça SÃO JOSÉ DOS CAMPOS",
+    "road": "Rodovia Governador Carvalho Pinto (SP-070)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.1867782,
+    "longitude": -45.8854538,
+    "tariff_per_axle": 5.4
+  },
+  {
+    "id": "sp-070-cacapava-114-000",
+    "name": "Praça CAÇAPAVA",
+    "road": "Rodovia Governador Carvalho Pinto (SP-070)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.099204,
+    "longitude": -45.707645,
+    "tariff_per_axle": 5.5
+  },
+  {
+    "id": "sp-021-praca-1-raimundo-pereira-de-magalhaes-000-360",
+    "name": "Praça PRAÇA 1 - RAIMUNDO PEREIRA DE MAGALHÃES",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.55,
+    "longitude": -46.75,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-2-bandeirantes-i-ramo-f-003-630",
+    "name": "Praça PRAÇA 2 - BANDEIRANTES (I) RAMO F",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.365,
+    "longitude": -46.741,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-2-trecho-sul-imigrantes-pista-externa-70-200",
+    "name": "Praça PRAÇA 2 - TRECHO SUL / IMIGRANTES (Pista Externa)",
+    "road": "Rodoanel Mário Covas - TRECHO SUL (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.68,
+    "longitude": -46.62,
+    "tariff_per_axle": 5.4
+  },
+  {
+    "id": "sp-021-praca-3-trecho-sul-imigrantes-pista-externa-70-300",
+    "name": "Praça PRAÇA 3 - TRECHO SUL / IMIGRANTES (Pista Externa)",
+    "road": "Rodoanel Mário Covas - TRECHO SUL (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.68,
+    "longitude": -46.62,
+    "tariff_per_axle": 5.4
+  },
+  {
+    "id": "sp-021-praca-4-trecho-sul-imigrantes-pista-interna-71-400",
+    "name": "Praça PRAÇA 4 - TRECHO SUL / IMIGRANTES (Pista Interna)",
+    "road": "Rodoanel Mário Covas - TRECHO SUL (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.68,
+    "longitude": -46.62,
+    "tariff_per_axle": 5.4
+  },
+  {
+    "id": "sp-021-praca-5-trecho-sul-via-anchieta-pista-interna-75-500",
+    "name": "Praça PRAÇA 5 - TRECHO SUL / VIA ANCHIETA (Pista Interna)",
+    "road": "Rodoanel Mário Covas - TRECHO SUL (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.7,
+    "longitude": -46.58,
+    "tariff_per_axle": 5.4
+  },
+  {
+    "id": "sp-099-p1-jambeiro-16-100",
+    "name": "Praça P1 - Jambeiro",
+    "road": "Rodovia dos Tamoios (SP-099)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.2556416,
+    "longitude": -45.6919926,
+    "tariff_per_axle": 5.8
+  },
+  {
+    "id": "sp-099-p2-paraibuna-59-300",
+    "name": "Praça P2 - Paraibuna",
+    "road": "Rodovia dos Tamoios (SP-099)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.3864203,
+    "longitude": -45.6626797,
+    "tariff_per_axle": 12.3
+  },
+  {
+    "id": "spi097-055-p3-caraguatatuba-13-500",
+    "name": "Praça P3 - Caraguatatuba",
+    "road": "Rodovia dos Tamoios (SPI097/055)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.62028,
+    "longitude": -45.41306,
+    "tariff_per_axle": 5.5
+  },
+  {
+    "id": "sp-255-guatapara-045-500",
+    "name": "Praça Guatapará",
+    "road": "ViaPaulista (SP-255)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -21.496092,
+    "longitude": -48.0360685,
+    "tariff_per_axle": 18.3
+  },
+  {
+    "id": "sp-255-boa-esperanca-do-sul-117-220",
+    "name": "Praça Boa Esperança do Sul",
+    "road": "ViaPaulista (SP-255)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -21.9930206,
+    "longitude": -48.3917372,
+    "tariff_per_axle": 12.0
+  },
+  {
+    "id": "sp-255-jau-165-600",
+    "name": "Praça Jaú",
+    "road": "ViaPaulista (SP-255)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -22.2933031,
+    "longitude": -48.5593432,
+    "tariff_per_axle": 7.0
+  },
+  {
+    "id": "sp-255-botucatu-229-040",
+    "name": "Praça Botucatu",
+    "road": "ViaPaulista (SP-255)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -22.8879628,
+    "longitude": -48.4410712,
+    "tariff_per_axle": 7.6
+  },
+  {
+    "id": "sp-255-itai-306-000",
+    "name": "Praça Itai",
+    "road": "ViaPaulista (SP-255)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -23.4172598,
+    "longitude": -49.0935788,
+    "tariff_per_axle": 8.3
+  },
+  {
+    "id": "sp-255-cel-macedo-331-500",
+    "name": "Praça Cel. Macedo",
+    "road": "ViaPaulista (SP-255)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -23.6304001,
+    "longitude": -49.313234,
+    "tariff_per_axle": 8.3
+  },
+  {
+    "id": "sp-318-sao-carlos-254-374",
+    "name": "Praça São Carlos",
+    "road": "ViaPaulista (SP-318)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -22.0180395,
+    "longitude": -47.891154,
+    "tariff_per_axle": 8.6
+  },
+  {
+    "id": "sp-330-santa-rita-do-passa-quatro-253-000",
+    "name": "Praça Santa Rita do Passa Quatro",
+    "road": "ViaPaulista (SP-330)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -21.7103738,
+    "longitude": -47.4777943,
+    "tariff_per_axle": 10.5
+  },
+  {
+    "id": "sp-330-sao-simao-281-000",
+    "name": "Praça São Simão",
+    "road": "ViaPaulista (SP-330)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -21.4800208,
+    "longitude": -47.5531095,
+    "tariff_per_axle": 10.5
+  },
+  {
+    "id": "sp-334-batatais-344-000",
+    "name": "Praça Batatais",
+    "road": "ViaPaulista (SP-334)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -20.892867,
+    "longitude": -47.592149,
+    "tariff_per_axle": 11.7
+  },
+  {
+    "id": "sp-334-restinga-375-000",
+    "name": "Praça Restinga",
+    "road": "ViaPaulista (SP-334)",
+    "concessionaire": "ViaPaulista / ARTESP 2025",
+    "latitude": -20.6032343,
+    "longitude": -47.4830912,
+    "tariff_per_axle": 11.7
+  },
+  {
+    "id": "sp-021-praca-3-bandeirantes-e-ramo-a-003-050",
+    "name": "Praça PRAÇA 3 - BANDEIRANTES (E) RAMO A",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.365,
+    "longitude": -46.741,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-4-anhanguera-i-ramo-f-007-000",
+    "name": "Praça PRAÇA 4 - ANHANGUERA (I) RAMO F",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.386,
+    "longitude": -46.864,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-5-anhanguera-i-ramo-e-006-790",
+    "name": "Praça PRAÇA 5 - ANHANGUERA (I) RAMO E",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.386,
+    "longitude": -46.864,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-6-anhanguera-e-ramo-a-006-210",
+    "name": "Praça PRAÇA 6 - ANHANGUERA (E) RAMO A",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.386,
+    "longitude": -46.864,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-7-castelo-branco-i-ramo-e-015-610",
+    "name": "Praça PRAÇA 7 - CASTELO BRANCO (I) RAMO E",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.495,
+    "longitude": -46.85,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-8-castelo-branco-e-ramo-a-014-290",
+    "name": "Praça PRAÇA 8 - CASTELO BRANCO (E) RAMO A",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.495,
+    "longitude": -46.85,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-9-padroeira-i-ramo-f-020-870",
+    "name": "Praça PRAÇA 9 - PADROEIRA (I) RAMO F",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.53,
+    "longitude": -46.86,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-10-padroeira-e-ramo-a-019-460",
+    "name": "Praça PRAÇA 10 - PADROEIRA (E) RAMO A",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.53,
+    "longitude": -46.86,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-11-raposo-tavares-i-ramo-e-024-700",
+    "name": "Praça PRAÇA 11 - RAPOSO TAVARES (I) RAMO E",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.56,
+    "longitude": -46.82,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-12-raposo-tavares-e-ramo-a-024-000",
+    "name": "Praça PRAÇA 12 - RAPOSO TAVARES (E) RAMO A",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.56,
+    "longitude": -46.82,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-13-osasco-e-regis-bittencourt-025-360",
+    "name": "Praça PRAÇA 13 - OSASCO (E) - Régis Bittencourt",
+    "road": "Rodoanel Mário Covas - TRECHO OESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.5329,
+    "longitude": -46.7919,
+    "tariff_per_axle": 3.5
+  },
+  {
+    "id": "sp-021-praca-1-trecho-sul-trecho-oeste-pista-interna-50-000",
+    "name": "Praça PRAÇA 1 - TRECHO SUL / TRECHO OESTE (Pista Interna)",
+    "road": "Rodoanel Mário Covas - TRECHO SUL (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.55,
+    "longitude": -46.75,
+    "tariff_per_axle": 5.4
+  },
+  {
+    "id": "sp-021-praca-6-trecho-sul-interseccao-trecho-leste-pista-externa-p6e-86-950",
+    "name": "Praça PRAÇA 6 - TRECHO SUL INTERSECÇÃO TRECHO LESTE (Pista Externa - P6E)",
+    "road": "Rodoanel Mário Covas - TRECHO SUL (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.55,
+    "longitude": -46.45,
+    "tariff_per_axle": 5.4
+  },
+  {
+    "id": "sp-021-praca-leste-1-alca-de-ligacao-trecho-leste-papa-joao-xxiii-88-000",
+    "name": "Praça Praça Leste 1 (Alça de Ligação) / Trecho Leste - Papa João XXIII",
+    "road": "Rodoanel Mário Covas - TRECHO LESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.55,
+    "longitude": -46.45,
+    "tariff_per_axle": 4.1
+  },
+  {
+    "id": "sp-021-praca-leste-2-pista-interna-trecho-leste-trecho-sul-87-940",
+    "name": "Praça Praça Leste 2 (Pista Interna) / Trecho Leste - Trecho Sul",
+    "road": "Rodoanel Mário Covas - TRECHO LESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.55,
+    "longitude": -46.45,
+    "tariff_per_axle": 4.1
+  },
+  {
+    "id": "sp-021-praca-leste-5-e-6-alca-interna-e-externa-trecho-leste-ayrton-senna-124-74",
+    "name": "Praça Praça Leste 5 e 6 (Alça Interna e Externa) / Trecho Leste - Ayrton Senna",
+    "road": "Rodoanel Mário Covas - TRECHO LESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.55,
+    "longitude": -46.45,
+    "tariff_per_axle": 4.1
+  },
+  {
+    "id": "sp-021-praca-leste-7-pista-externa-interseccao-trecho-leste-com-via-dutra-127-48",
+    "name": "Praça Praça Leste 7 (Pista Externa) - Intersecção Trecho Leste com Via Dutra",
+    "road": "Rodoanel Mário Covas - TRECHO LESTE (SP-021)",
+    "concessionaire": "ARTESP/SP 2025",
+    "latitude": -23.55,
+    "longitude": -46.45,
+    "tariff_per_axle": 4.1
   }
 ]

@@ -24,6 +24,7 @@ class FreightSimulateRequest(BaseModel):
     consumption_km_l: float = Field(default=0, ge=0, le=80)
     fuel_price: float = Field(default=0, ge=0, le=100)
     round_trip: bool = False
+    include_tolls: bool = True
     route_preference: RoutePreference = RoutePreference.EFFICIENT
 
 
@@ -56,6 +57,8 @@ class FreightSimulateResponse(BaseModel):
     vehicle_type: VehicleType
     axles: int
     round_trip: bool
+    include_tolls: bool = True
+    has_tolls: bool = False
     geometry: list[list[float]]
     tolls: list[TollPlazaHit] = Field(default_factory=list)
     notes: list[str] = Field(default_factory=list)

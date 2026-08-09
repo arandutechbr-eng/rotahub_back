@@ -65,27 +65,33 @@ class FreightService:
 
         operational = distance_total * base_rate * axle_factor
 
-        toll_service = self._resolve_toll_service()
-        tolls = toll_service.detect(
-            route["geometry"],
-            payload.vehicle_type,
-            payload.axles,
-            passes=multiplier,
-        )
-        toll_cost = round(sum(item.cost for item in tolls), 2)
+        tolls = []
+        toll_cost = 0.0
+        if payload.include_tolls:
+            toll_service = self._resolve_toll_service()
+            tolls = toll_service.detect(
+                route["geometry"],
+                payload.vehicle_type,
+                payload.axles,
+                passes=multiplier,
+            )
+            toll_cost = round(sum(item.cost for item in tolls), 2)
 
-        if tolls:
-            plazas = "praça" if len(tolls) == 1 else "praças"
-            notes.append(f"{len(tolls)} {plazas} de pedágio na rota (tarifa por eixo).")
-            if payload.route_preference == RoutePreference.AVOID_TOLLS:
-                notes.append(
-                    "Preferência 'evitar pedágios' registrada, mas o desvio automático ainda não é aplicado."
-                )
-        elif payload.route_preference == RoutePreference.AVOID_TOLLS:
-            notes.append("Nenhuma praça de pedágio ativa cadastrada na rota.")
+            if tolls:
+                plazas = "praça" if len(tolls) == 1 else "praças"
+                notes.append(f"{len(tolls)} {plazas} de pedágio na rota (tarifa por eixo).")
+                if payload.route_preference == RoutePreference.AVOID_TOLLS:
+                    notes.append(
+                        "Preferência 'evitar pedágios' registrada, mas o desvio automático ainda não é aplicado."
+                    )
+            elif payload.route_preference == RoutePreference.AVOID_TOLLS:
+                notes.append("Nenhuma praça de pedágio ativa cadastrada na rota.")
+        else:
+            notes.append("Cálculo de pedágios desativado nesta simulação.")
 
         freight_value = round(operational + fuel_cost + toll_cost, 2)
-        notes.append("Valores estimados. Pedágios vêm do cadastro admin — confira as tarifas oficiais.")
+        if payload.include_tolls:
+            notes.append("Valores estimados. Pedágios vêm do cadastro admin — confira as tarifas oficiais.")
 
         return FreightSimulateResponse(
             origin=origin,
@@ -99,6 +105,8 @@ class FreightService:
             vehicle_type=payload.vehicle_type,
             axles=payload.axles,
             round_trip=payload.round_trip,
+            include_tolls=payload.include_tolls,
+            has_tolls=bool(tolls),
             geometry=route["geometry"],
             tolls=tolls,
             notes=notes,
